@@ -1,8 +1,11 @@
 print("juego de trivia")
 print(" digite solo respuestas concisas y en minuscula ")
+print(" mediante este codigo se pude crear difentes cuestionarios o trivias solamente cambiando las preguntas y las respuestas")
+print(" este codigo tiene como fin ayudar a los docentes a hacer mas facil su tarea de verificar las respuestas de los estudiantes")
 
+#instrucciones de como crear el codigo
 
-#preguntas 
+#1. crear las preguntas y digitar lo que se quiera preguntar 
 
 pregunta1 = "en que año surgio la programacion? = "
 pregunta2 = "cual fue el primer lenguaje de programacion? = "
@@ -15,11 +18,11 @@ pregunta8 = " cual es el lenguaje de programacion mas usado en el mundo? = "
 pregunta9 =" en que año se creo el primer computador? "
 pregunta10 = " indique lo que le falta para ser correcto....... print(helloworld )"
 
-# respuestas
+# 2. respuestas: hacemos lo mismo que con las preguntas pero colocamos las respuestas de las preguntas
 
 respuesta1 = "1957"
 respuesta2 = "fortran"
-respuesta3 = "Ada Lovelace"
+respuesta3 = "ada lovelace"
 respuesta4 = "primitivos y derivados"
 respuesta5 = "un lenguaje de programacion"
 respuesta6 = "steve jobs"
@@ -28,6 +31,7 @@ respuesta8 = "python"
 respuesta9 = "1943"
 respuesta10 = "las comillas"
 
+#3) para crear las entradas es necesario colocar un input ya que el codigo no seguira hasta que la persona pulse enter, luego usamos f que nos va a ayudar a poner el texto en la entrada
 #entradas
 
 entrada1 = input(f"pregunta 1 :{pregunta1}")
@@ -40,7 +44,7 @@ entrada7 = input(f"pregunta 7 :{pregunta7}")
 entrada8 = input(f"pregunta 8 :{pregunta8}")
 entrada9 = input(f"pregunta 9 :{pregunta9}")
 entrada10 = input(f"pregunta 10 :{pregunta10}")
-
+#49 es necesario crear las variables de las entradas para poder crear el condicional if y ponenos todo como False 
 #aciertos
 
 acierto1 = False
@@ -54,6 +58,8 @@ acierto8 = False
 acierto9 = False
 acierto10 = False
 
+#5) colocamos la condicion if para crear el condicional de que si la entrada 1 es igual a la respuesta es un valor verdadero
+# tambien es necesario colocar un else que nos ayudara a que si el usuario coloca algo diferente a la rspuesta sea un valor incorrecto o falso
 #condicion 1
 
 if (entrada1 == respuesta1):
@@ -120,13 +126,15 @@ if (entrada10 == respuesta10):
 
 else: acierto10 = False 
 
+# es el carácter de salto de línea y se usa para indicar el fin de una línea de texto y el inicio de una línea nueva. 
 print("/n")
 
 #acierto y condiciones segunda parte 
 
-
+# las variables de falso y verdadero no estan programdas porque no le hemos indicado que hacer con el TRUE y FALSE
 #if 1 
 
+# Aqui ya definimos que cuando sea TRUE escribir es correcta y si es FALSe escribir es incorrecta
 if( acierto1 == True ):
     print("pregunta 1 es correcta")
 
